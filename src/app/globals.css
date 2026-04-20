@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #C6A75E; /* Muted Gold */
+  --color-primary-dark: #A88C3F; /* Secondary Gold */
+  --color-bg-deep: #0B0B0B;
+  --color-bg-secondary: #121212;
+  --color-surface: #1A1A1A;
+  --color-text-primary: #EAEAEA;
+  --color-text-secondary: #B5B5B5;
+  --color-border-gold: rgba(198, 167, 94, 0.2);
+  --font-cairo: var(--font-cairo), sans-serif;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-surface/60 backdrop-blur-xl border border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.4)];
+  }
+  .glass-dark {
+    @apply bg-bg-deep/80 backdrop-blur-xl border border-border-gold shadow-[0_12px_40px_rgba(0,0,0,0.6)];
+  }
+  .text-gold-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-dark to-primary;
+  }
+}
+
+:root {
+  --background: #0B0B0B;
+  --foreground: #EAEAEA;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-cairo), sans-serif;
+  @apply antialiased selection:bg-primary/30;
+}
