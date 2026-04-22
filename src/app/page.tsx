@@ -9,17 +9,12 @@ const experts = [
   {
     name: "د. حسن حمزة",
     title: "مدير عام الاستشفاء البيئي بخليج سفاجا وطبيب الأشعة التشخيصية السابق بمستشفي القوات المسلحة",
-    image: "/doctor-1.jpg",
+    image: "/doctor-2.jpg",
   },
   {
     name: "د. عمرو سليمان",
     title: "أخصائي الطب الرياضي بميلانو ووكيل الاتحاد الدولي للأكاديميات الرياضية بتركيا",
-    image: "/doctor-2.jpg",
-  },
-  {
-    name: "د. رياض عبدالجليل",
-    title: "خريج ثلاث جامعات دولية من بينهم القصر العيني",
-    image: "/doctor-1.jpg", // Re-using or choose another if available
+    image: "/doctor-1.jpg",
   },
 ];
 
@@ -101,7 +96,7 @@ export default function Home() {
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {experts.map((expert, index) => (
               <ExpertCard 
                 key={index} 
