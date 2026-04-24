@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Hero } from "@/components/Hero";
+import { WellnessTourism } from "@/components/WellnessTourism";
 import { ExpertCard } from "@/components/ExpertCard";
 import { motion } from "framer-motion";
 
@@ -11,17 +12,14 @@ const experts = [
     title: "مدير عام الاستشفاء البيئي بخليج سفاجا وطبيب الأشعة التشخيصية السابق بمستشفي القوات المسلحة",
     image: "/doctor-2.jpg",
   },
-  {
-    name: "د. عمرو سليمان",
-    title: "أخصائي الطب الرياضي بميلانو ووكيل الاتحاد الدولي للأكاديميات الرياضية بتركيا",
-    image: "/doctor-1.jpg",
-  },
 ];
 
 export default function Home() {
   return (
     <>
       <Hero />
+      
+      <WellnessTourism />
       
       {/* Bio Section */}
       <section id="experts" className="py-32 bg-bg-secondary relative overflow-hidden">
@@ -96,7 +94,7 @@ export default function Home() {
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 gap-10 max-w-md mx-auto">
             {experts.map((expert, index) => (
               <ExpertCard 
                 key={index} 
