@@ -45,19 +45,19 @@ export function Hero() {
         >
           <motion.div variants={itemVariants} className="inline-block mb-6">
             <span className="text-primary font-black tracking-[0.5em] uppercase text-xs border border-primary/20 px-8 py-2.5 rounded-full backdrop-blur-sm bg-primary/5">
-              Promedic Elite Care
+              منظومة عافية متكاملة
             </span>
           </motion.div>
           
           <motion.h1 variants={itemVariants} className="text-6xl md:text-[5.5rem] font-black text-text-primary leading-[1.1] mb-8 tracking-tighter">
-            PROMEDIC <span className="text-primary">VIP</span> <br/>
-            <span className="text-2xl md:text-4xl font-light tracking-[0.3em] uppercase text-text-secondary mt-4 block leading-relaxed">
-              1994 العقبي
+            العقبي <span className="text-primary">94 VIP</span> <br/>
+            <span className="text-2xl md:text-3xl font-light tracking-[0.2em] text-text-secondary mt-4 block leading-relaxed">
+              الوعي + القرار + التجربة + الأمان
             </span>
           </motion.h1>
           
-          <motion.p variants={itemVariants} className="text-lg md:text-xl text-text-secondary mb-12 leading-loose font-light max-w-2xl mx-auto uppercase tracking-widest px-4">
-            دكتور في التدريب الرياضي من كلية ليدز في انجلترا يقدم لك رعاية ومتابعة استثنائية للوصول إلى أفضل مستوى بدني وصحي.
+          <motion.p variants={itemVariants} className="text-lg md:text-xl text-text-secondary mb-12 leading-loose font-light max-w-3xl mx-auto tracking-wide px-4">
+            منصة رائدة في تقديم حلول العافية المتكاملة في مصر والمملكة العربية السعودية، تجمع بين الطب الحديث، السياحة العلاجية، التأهيل الرياضي، والبرامج الروحانية استجابة للتحولات العالمية في مفهوم الصحة.
           </motion.p>
           
           <motion.div
@@ -65,16 +65,12 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-4"
           >
             <a
-              href="#experts"
-              className="w-full sm:w-auto px-12 py-5 bg-primary hover:bg-primary-dark text-bg-deep font-black uppercase tracking-widest text-xs rounded-lg transition-all transform hover:scale-[1.02]"
+              href="https://wa.me/201093011183"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-12 py-5 bg-primary hover:bg-primary-dark text-bg-deep font-black uppercase tracking-widest text-sm rounded-lg transition-all transform hover:scale-[1.02] shadow-[0_0_30px_rgba(198,167,94,0.3)]"
             >
-              تعرف على الخبراء
-            </a>
-            <a
-              href="#contact"
-              className="w-full sm:w-auto px-12 py-5 border border-primary/40 text-primary hover:bg-primary hover:text-bg-deep font-black uppercase tracking-widest text-xs rounded-lg transition-all backdrop-blur-sm shadow-xl shadow-black/20"
-            >
-              احجز موعداً
+              ابدأ رحلتك خلال 240 ثانية (ساعة الخلود)
             </a>
           </motion.div>
         </motion.div>

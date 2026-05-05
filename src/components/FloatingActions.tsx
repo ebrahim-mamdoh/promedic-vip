@@ -64,7 +64,7 @@ export function FloatingActions() {
 
       {/* WhatsApp Button */}
       <motion.a
-        href="https://wa.me/20100000000"
+        href="https://wa.me/201093011183"
         target="_blank"
         rel="noopener noreferrer"
         className="relative group w-16 h-16 bg-primary rounded-lg flex items-center justify-center shadow-[0_0_30px_rgba(198,167,94,0.3)] text-bg-deep"
